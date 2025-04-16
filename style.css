@@ -303,7 +303,7 @@ label {
     padding-bottom: 30px;
 }
 
-@media screen and (max-width: 1120px) {
+@media screen and (max-width: 768px) {
     .main {
         background-color: #fff;
         width: 100%;
