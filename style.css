@@ -470,15 +470,8 @@ form {
         margin-inline: auto;
         width: 70%;
     }
-
-    .right-section {
-        height: fit-content;
-        }
     
     #results {
-        text-align: justify;
-        margin-inline: auto;
-        width: calc(100% - 45px);
         padding-top: 30px;
         }
 }
