@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mortgage Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/favicon-32x32.jpg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <section class="left-section">
+            <div class="left-inner">
+                <div class="header">
+
+                    <p>Mortgage Calculator</p>
+
+                    <button type="button" id="clear">Clear All</button>
+
+                </div>
+            
+                <form>
+                    <label for="mortAmount">Mortgage Amount</label>
+                    <div class="mortAmount">
+                        <p>£</p>
+                        <input type="text" id="mortAmount" name="mortAmount" required>
+                    </div>
+
+
+                    <div class="termRate">
+                        <div>
+                            <label for="mortTerm">Mortgage Term</label>
+                            <div class="input-with-label">
+                                <input type="text" id="mortTerm" name="mortTerm" required>
+                                <p>years</p>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="iRate">Interest Rate</label>
+                            <div class="input-with-label">
+                                <input type="text" id="iRate" name="iRate" required>
+                                <p>%</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mort-type">
+                        <p>Mortgage Type</p>
+                        <div class="mort-type-style">
+                            <label for="repayment">
+                            <input type="radio" id="repayment" name="mortType" value="Repayment" class="mort" required>
+                                <div class="mort-radio">
+
+                                </div>
+                                Repayment
+                            </label><br>
+                        </div>
+                        <div class="mort-type-style">
+                            <label for="interest">
+                                <input type="radio" id="interest" name="mortType" value="Interest Only" class="mort" required>
+                                    <div class="mort-radio">
+                                        
+                                    </div>
+                                    Interest Only
+                            </label><br>
+                        </div>
+                    </div>
+
+                    <button class="calculate" type="submit">
+                        <img src="icon-calculator.svg">
+                        Calculate Repayments
+                    </button>
+
+                </form>
+            </div>
+        </section>
+        <section class="right-section">
+            <div class="right-inner">
+                <div id="instruction">
+                    <img src="illustration-empty.svg">
+                    <h1>Results shown here</h1>
+                    <p>Complete the form and click "calulate repayments"to <br>see what your monthly repayments would be.</p>
+                </div>
+                    <div id="results" class="hide">
+                        <h1>Your results</h1>
+                        <p>Your results are shown below based on the information <br>you provided.
+                        To adjust the results, edit the form and <br>click
+                        "calculate repayments" again.</p>
+                        <div id="result-values">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
