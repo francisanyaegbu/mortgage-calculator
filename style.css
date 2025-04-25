@@ -262,6 +262,7 @@ label {
     text-align: center;
     background-color: #133040;
     width: 50%;
+    height: fit-content;
     border-bottom-left-radius: 70px;
     border-top-right-radius:20px;
     border-bottom-right-radius: 20px;
@@ -299,6 +300,7 @@ label {
     text-align: justify;
     margin-inline: auto;
     width: calc(100% - 45px);
+    padding-top: 30px;
 }
 
 #results h1 {
